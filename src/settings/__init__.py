@@ -1,11 +1,11 @@
 import pygame
-from pathlib import Path
 
 from os import walk
 from os.path import join
+from pathlib import Path
 from pygame.math import Vector2 as vector
-from modules.pytmx.util_pygame import load_pygame
 
+from src.pytmx.util_pygame import load_pygame
 from src.system import System
 
 
