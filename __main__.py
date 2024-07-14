@@ -1,15 +1,5 @@
-from src.settings import *
-
-from src.core.level import Level
-from src.core.overworld import Overworld
-from src.core.data import Data
-from src.core.ui import UI
-from src.core.support import (
-    import_image, 
-    import_folder,
-    import_folder_dict,
-    import_sub_folders,
-)
+from src.core import *
+from src.core.settings import *
 
 
 class Game:
@@ -68,31 +58,34 @@ class Game:
     def import_assets(self):
         self.level_frames = {
 			'flag': import_folder(GRAPHICS_DIR, 'level', 'flag'),
-			'saw': import_folder(GRAPHICS_DIR, 'enemies', 'saw', 'animation'),
-			'floor_spike': import_folder(GRAPHICS_DIR,'enemies', 'floor_spikes'),
-			'palms': import_sub_folders(GRAPHICS_DIR, 'level', 'palms'),
-			'candle': import_folder(GRAPHICS_DIR, 'level', 'candle'),
+            'candle': import_folder(GRAPHICS_DIR, 'level', 'candle'),
 			'window': import_folder(GRAPHICS_DIR, 'level', 'window'),
-			'big_chain': import_folder(GRAPHICS_DIR, 'level', 'big_chains'),
+            'palms': import_sub_folders(GRAPHICS_DIR, 'level', 'palms'),
+            'big_chain': import_folder(GRAPHICS_DIR, 'level', 'big_chains'),
+            'helicopter': import_folder(GRAPHICS_DIR, 'level', 'helicopter'),
+            'water_top': import_folder(GRAPHICS_DIR, 'level', 'water', 'top'),
+			'water_body': import_image(GRAPHICS_DIR, 'level', 'water', 'body'),
 			'small_chain': import_folder(GRAPHICS_DIR, 'level', 'small_chains'),
+            'bg_tiles': import_folder_dict(GRAPHICS_DIR, 'level', 'bg', 'tiles'),
 			'candle_light': import_folder(GRAPHICS_DIR, 'level', 'candle light'),
-			'player': import_sub_folders(GRAPHICS_DIR,'player'),
+            'cloud_small': import_folder(GRAPHICS_DIR,'level', 'clouds', 'small'),
+			'cloud_large': import_image(GRAPHICS_DIR,'level', 'clouds', 'large_cloud'),
+
+            'shell': import_sub_folders(GRAPHICS_DIR,'enemies', 'shell'),
+            'tooth': import_folder(GRAPHICS_DIR,'enemies', 'tooth', 'run'),
 			'saw': import_folder(GRAPHICS_DIR, 'enemies', 'saw', 'animation'),
-			'saw_chain': import_image(GRAPHICS_DIR, 'enemies', 'saw', 'saw_chain'),
-			'helicopter': import_folder(GRAPHICS_DIR, 'level', 'helicopter'),
-			'boat': import_folder(GRAPHICS_DIR, 'objects', 'boat'),
-			'spike': import_image(GRAPHICS_DIR, 'enemies', 'spike_ball', 'Spiked Ball'),
-			'spike_chain': import_image(GRAPHICS_DIR, 'enemies', 'spike_ball', 'spiked_chain'),
-			'tooth': import_folder(GRAPHICS_DIR,'enemies', 'tooth', 'run'),
-			'shell': import_sub_folders(GRAPHICS_DIR,'enemies', 'shell'),
+            'saw': import_folder(GRAPHICS_DIR, 'enemies', 'saw', 'animation'),
 			'pearl': import_image(GRAPHICS_DIR, 'enemies', 'bullets', 'pearl'),
+			'floor_spike': import_folder(GRAPHICS_DIR,'enemies', 'floor_spikes'),
+            'saw_chain': import_image(GRAPHICS_DIR, 'enemies', 'saw', 'saw_chain'),
+            'spike': import_image(GRAPHICS_DIR, 'enemies', 'spike_ball', 'Spiked Ball'),
+            'spike_chain': import_image(GRAPHICS_DIR, 'enemies', 'spike_ball', 'spiked_chain'),
+			
+			'player': import_sub_folders(GRAPHICS_DIR,'player'),
+			'boat': import_folder(GRAPHICS_DIR, 'objects', 'boat'),
 			'items': import_sub_folders(GRAPHICS_DIR, 'items'),
 			'particle': import_folder(GRAPHICS_DIR, 'effects', 'particle'),
-			'water_top': import_folder(GRAPHICS_DIR, 'level', 'water', 'top'),
-			'water_body': import_image(GRAPHICS_DIR, 'level', 'water', 'body'),
-			'bg_tiles': import_folder_dict(GRAPHICS_DIR, 'level', 'bg', 'tiles'),
-			'cloud_small': import_folder(GRAPHICS_DIR,'level', 'clouds', 'small'),
-			'cloud_large': import_image(GRAPHICS_DIR,'level', 'clouds', 'large_cloud'),
+			
 		}
         self.font = pygame.font.Font(join(GRAPHICS_DIR, 'ui', 'runescape_uf.ttf'), 40)
         self.ui_frames = {

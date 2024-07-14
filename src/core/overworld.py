@@ -1,6 +1,4 @@
-from random import randint
-
-from src.settings import * 
+from src.core.settings import * 
 from src.core.groups import WorldSprites
 from src.core.sprites import Sprite, AnimatedSprite, Node, Icon, PathSprite
 

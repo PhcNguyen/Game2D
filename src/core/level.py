@@ -1,11 +1,8 @@
-from random import uniform
-
-from src.settings import *
-from src.core.sprites import Sprite, MovingSprite, AnimatedSprite, Spike, Item, ParticleEffectSprite
+from src.core.settings import *
 from src.core.player import Player
 from src.core.groups import AllSprites
 from src.core.enemies import Tooth, Shell, Pearl
-
+from src.core.sprites import Sprite, MovingSprite, AnimatedSprite, Spike, Item, ParticleEffectSprite
 
 
 

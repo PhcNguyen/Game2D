@@ -1,8 +1,14 @@
 import pygame
 
+from random import (
+    uniform, choice,
+    randint
+)
 from os import walk
 from os.path import join
 from pathlib import Path
+from math import sin, cos, radians
+from pygame.time import get_ticks
 from pygame.math import Vector2 as vector
 
 from src.pytmx.util_pygame import load_pygame

@@ -1,7 +1,5 @@
-from random import randint
-
-from src.settings import * 
-from src.core.timer import Timer
+from src.core.settings import * 
+from src.core.utils import Timer
 from src.core.sprites import AnimatedSprite
 
 

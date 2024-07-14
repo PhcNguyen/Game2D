@@ -1,7 +1,5 @@
-from random import choice
-
-from src.settings import * 
-from src.core.timer import Timer
+from src.core.settings import * 
+from src.core.utils import Timer
 
 
 

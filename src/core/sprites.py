@@ -1,7 +1,6 @@
-from math import sin, cos, radians
-from random import randint
+from src.core.settings import * 
 
-from src.settings import * 
+
 
 class Sprite(pygame.sprite.Sprite):
 	def __init__(self, pos, surf = pygame.Surface((TILE_SIZE,TILE_SIZE)), groups = None, z = Z_LAYERS['main']):

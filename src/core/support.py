@@ -1,4 +1,4 @@
-from src.settings import * 
+from src.core.settings import * 
 
 
 
