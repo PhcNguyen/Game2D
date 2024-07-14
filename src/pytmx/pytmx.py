@@ -1,20 +1,20 @@
 from __future__ import annotations
 
-
-import gzip
-import logging
 import os
-import struct
-import zlib
-from base64 import b64decode
-from collections import defaultdict, namedtuple
-from itertools import chain, product
-from math import cos, radians, sin
-from operator import attrgetter
-from typing import List, Tuple, Optional, Sequence, Union, Dict, Iterable
-from xml.etree import ElementTree
 import json
+import gzip
+import zlib
+import struct
+import logging
+
 from copy import deepcopy
+from base64 import b64decode
+from operator import attrgetter
+from xml.etree import ElementTree
+from math import cos, radians, sin
+from itertools import chain, product
+from collections import defaultdict, namedtuple
+from typing import List, Tuple, Optional, Sequence, Union, Dict, Iterable
 
 # for type hinting
 try:
