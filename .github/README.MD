@@ -3,7 +3,8 @@
 
 `Trò chơi 2D sử dụng thư viện Pygame. Hãy xem qua từng phần của mã để hiểu rõ cách trò chơi hoạt động.`
 
-Window
+
+``Window``
 ```
 PS C:\> ls
 
@@ -15,7 +16,8 @@ d-----         7/14/2024   9:56 PM                Pirate-Journey
 PS C:\> python Pirate-Journey
 ```
 
-Linux
+
+``Linux``
 ```
 pnguyen@linux-desktop:-$ python3 Pirate-Journey
 ```
