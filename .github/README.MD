@@ -27,6 +27,7 @@ drwxr-xr-x 5 pnguyen 30865829 Jul 14 9:56 Legendary-Pirates
 
 pnguyen@linux-desktop:-$ python3 Legendary-Pirates
 ```
+---
 **Các nút điều khiển của trò chơi.**
 ```
 - space: Nhảy lên
@@ -34,8 +35,9 @@ pnguyen@linux-desktop:-$ python3 Legendary-Pirates
 - < : Di chuyển sang trái
 - > : Di chuyển sang phải
 ```
-
+---
 ### IMAGES GAME
-![Image1](https://github.com/PhcNguyen/Legendary-Pirates/blob/main/.github/images/image2.png)
-![Image2](https://github.com/PhcNguyen/Legendary-Pirates/blob/main/.github/images/image1.png)
+![Image1](https://github.com/PhcNguyen/Legendary-Pirates/blob/main/.github/images/image1.png)
+![Image2](https://github.com/PhcNguyen/Legendary-Pirates/blob/main/.github/images/image2.png)
 ![Image3](https://github.com/PhcNguyen/Legendary-Pirates/blob/main/.github/images/image3.png)
+![Image4](https://github.com/PhcNguyen/Legendary-Pirates/blob/main/.github/images/image4.png)
