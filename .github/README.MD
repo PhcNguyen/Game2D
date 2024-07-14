@@ -3,9 +3,10 @@
 
 `Trò chơi 2D sử dụng thư viện Pygame. Hãy xem qua từng phần của mã để hiểu rõ cách trò chơi hoạt động.`
 
-
-``Window``
+- Cách khởi động trò chơi trên Window or Linux.
+`Window`
 ```
+PS C:\> git clone https://github.com/PhcNguyen/Pirate-Journey
 PS C:\> ls
 
     Directory: C:\
@@ -17,8 +18,13 @@ PS C:\> python Pirate-Journey
 ```
 
 
-``Linux``
+`Linux`
 ```
+pnguyen@linux-desktop:-$ git clone https://github.com/PhcNguyen/Pirate-Journey
+pnguyen@linux-desktop:-$ ls -l
+total 24
+drwxr-xr-x 5 pnguyen 30865829 Jul 14 9:56 Pirate-Journey
+
 pnguyen@linux-desktop:-$ python3 Pirate-Journey
 ```
 
