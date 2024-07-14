@@ -30,10 +30,10 @@ pnguyen@linux-desktop:-$ python3 Legendary-Pirates
 ---
 **Các nút điều khiển của trò chơi.**
 ```
-- space: Nhảy lên
-- x : tấn công
-- < : Di chuyển sang trái
-- > : Di chuyển sang phải
+    space: Nhảy lên
+    x : tấn công
+    < : Di chuyển sang trái
+    > : Di chuyển sang phải
 ```
 ---
 ### IMAGES GAME

@@ -1,35 +1,34 @@
-from src.core.settings import * 
+from src.core.settings import *
 
+# Nhập một hình ảnh từ đường dẫn được cung cấp.
+def import_image(*path, alpha=True, format='png'):
+    full_path = join(*path) + f'.{format}'
+    return pygame.image.load(full_path).convert_alpha() if alpha else pygame.image.load(full_path).convert()
 
-
-def import_image(*path, alpha = True, format = 'png'):
-	full_path = join(*path) + f'.{format}'
-	return pygame.image.load(full_path).convert_alpha() if alpha else pygame.image.load(full_path).convert()
-
-
+# Nhập tất cả hình ảnh từ một thư mục.
 def import_folder(*path):
-	frames = []
-	for folder_path, subfolders, image_names in walk(join(*path)):
-		for image_name in sorted(image_names, key = lambda name: int(name.split('.')[0])):
-			full_path = join(folder_path, image_name)
-			frames.append(pygame.image.load(full_path).convert_alpha())
-	return frames 
+    frames = []
+    for folder_path, subfolders, image_names in walk(join(*path)):
+        for image_name in sorted(image_names, key=lambda name: int(name.split('.')[0])):
+            full_path = join(folder_path, image_name)
+            frames.append(pygame.image.load(full_path).convert_alpha())
+    return frames 
 
-
+# Nhập hình ảnh từ một thư mục và trả về dưới dạng từ điển.
 def import_folder_dict(*path):
-	frame_dict = {}
-	for folder_path, _, image_names in walk(join(*path)):
-		for image_name in image_names:
-			full_path = join(folder_path, image_name)
-			surface = pygame.image.load(full_path).convert_alpha()
-			frame_dict[image_name.split('.')[0]] = surface
-	return frame_dict
+    frame_dict = {}
+    for folder_path, _, image_names in walk(join(*path)):
+        for image_name in image_names:
+            full_path = join(folder_path, image_name)
+            surface = pygame.image.load(full_path).convert_alpha()
+            frame_dict[image_name.split('.')[0]] = surface
+    return frame_dict
 
-
+# Nhập hình ảnh từ các thư mục con trong một thư mục.
 def import_sub_folders(*path):
-	frame_dict = {}
-	for _, sub_folders, __ in walk(join(*path)): 
-		if sub_folders:
-			for sub_folder in sub_folders:
-				frame_dict[sub_folder] = import_folder(*path, sub_folder)
-	return frame_dict
+    frame_dict = {}
+    for _, sub_folders, __ in walk(join(*path)): 
+        if sub_folders:
+            for sub_folder in sub_folders:
+                frame_dict[sub_folder] = import_folder(*path, sub_folder)
+    return frame_dict
