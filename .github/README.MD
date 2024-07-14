@@ -1,7 +1,7 @@
 ## Pirate Journey
 [![License](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/PhcNguyen/Pirate-Journey/blob/main/.github/LICENSE)
 
-Hãy bắt đầu trải ghiệm trò chơi ngay bây giờ.
+`Trò chơi 2D sử dụng thư viện Pygame. Hãy xem qua từng phần của mã để hiểu rõ cách trò chơi hoạt động.`
 
 Window
 ```
@@ -20,11 +20,6 @@ Linux
 pnguyen@linux-desktop:-$ python3 Pirate-Journey
 ```
 
-#### Lobby
-![Lobby](https://github.com/PhcNguyen/Pirate-Journey/blob/main/.github/images/image2.png)
-
-#### Map 1
-![Map1](https://github.com/PhcNguyen/Pirate-Journey/blob/main/.github/images/image1.png)
-
-#### Map 2
-![Map2](https://github.com/PhcNguyen/Pirate-Journey/blob/main/.github/images/image3.png)
+![Image1](https://github.com/PhcNguyen/Pirate-Journey/blob/main/.github/images/image2.png)
+![Image2](https://github.com/PhcNguyen/Pirate-Journey/blob/main/.github/images/image1.png)
+![Image3](https://github.com/PhcNguyen/Pirate-Journey/blob/main/.github/images/image3.png)

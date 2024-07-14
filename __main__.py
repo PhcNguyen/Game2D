@@ -6,7 +6,7 @@ class Game:
     def __init__(self) -> None:
         pygame.init()
         
-        pygame.display.set_caption('Game2D')
+        pygame.display.set_caption('PIRATE-JOURNEY')
         
         # Set the display mode first
         self.display_surface = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
